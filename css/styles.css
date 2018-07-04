@@ -225,6 +225,61 @@ p {
 .smash-articles .smash-articles__arrow:hover {
 	color: #390c09;
 }
+.smash-books {
+	background-color: #F6F3F2;
+}
+.smash-books .smash-books__block {
+	margin: 15px 20px; 
+	width: 30%;
+	height: 100%;
+	display: inline-block;
+	vertical-align: top;
+	transition: all .5s;	
+}
+.smash-books .smash-books__block:hover{
+	background-color: #fff;
+	transform: scale(1.08); 
+	box-shadow: 0 0 40px rgba(0,0,0,.15);
+}
+
+.smash-books .smash-books__block h3{
+	font: 700 24px Mija, Georgia, sans-serif;
+	margin: 15px 15px;
+} 
+.smash-books .smash-books__block p{
+	width: 80px;
+	padding: 15px;
+}
+.smash-books .smash-books__block:hover p{
+	background-color: #2DA2C5 ;
+}
+.smash-books .smash-books__block li{
+	list-style: none
+}
+
+.smash-books .smash-books__block li a{
+	text-decoration: none;
+	position: relative;
+	font-size: 20px;
+	line-height: 2;
+	color: #2DA2C5;
+	border-bottom: 2px solid #2DA2C5;
+}
+
+.smash-books .smash-books__block li a:before {
+	content: '';
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	position: absolute;
+	background: #C7372A;
+	top: 50%;
+	left: -20px;
+}
+.smash-books .smash-books__block li a:hover{
+	color: #000;
+}
+
 
 .smash-events {
 	background-color: #1b75bb;
@@ -454,19 +509,3 @@ p {
 	background: linear-gradient(to bottom, #41b14f 0%,#9ec14c 100%);
 }
 
-.smash-books .smash-books__block {
-	width: 33%;
-	display: inline-block;
-	vertical-align: top;	
-}
-
-.smash-books__block:nth-last-of-type(2) li:nth-child(3n) a{
-	color: green;
-}
-
-.smash-books__block li:only-child a{ /* не работает потому что много детей*/
-	color: black;
-}
-.smash-books__block li a[data-image="foo"]{ 
-	color: red;
-}
